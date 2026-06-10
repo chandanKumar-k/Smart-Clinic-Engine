@@ -177,5 +177,3 @@ try:
         st.info("🌱 The active timeline matrix for today is currently open and clear. First booking will register at 09:00 AM.")
 except Exception as table_err:
     st.caption(f"Waiting for first active row validation parameters: {table_err}")
-
-# if u want to run agian from 9 : 00 AM --> u should just delete clinic.db and run again python database.py and again open new terminal then again start app.py
