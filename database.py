@@ -27,7 +27,6 @@ def initialize_database():
         Gender TEXT NOT NULL
     );
     """)
-
     cursor.execute("""
     CREATE TABLE Doctors (
         DoctorID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -120,6 +119,6 @@ def fetch_training_data():
     df = pd.read_sql_query(query, conn)
     conn.close()
     return df
-
+    
 if __name__ == "__main__":
     inject_mock_data()
